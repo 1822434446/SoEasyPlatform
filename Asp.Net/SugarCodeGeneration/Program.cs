@@ -10,12 +10,37 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace SugarCodeGeneration
 {
+
+
+    /// <summary>
+    /// F5直接运行生成项目
+    /// </summary>
+    /// <param name="args"></param>
     class Program
     {
+
+        /***3个必填参数***/
+
         //如果你不需要自定义，直接配好数据库连接，F5运行项目
         const SqlSugar.DbType dbType = SqlSugar.DbType.SqlServer;
+        /// <summary>
+        /// 连接字符串
+        /// </summary>
         const string connectionString = "server=.;uid=sa;pwd=@jhl85661501;database=SqlSugar4XTest";
- 
+        /// <summary>
+        ///解决方案名称
+        /// </summary>
+        const string SolutionName = "SoEasyPlatform";
+
+        /***3个必填参数***/
+
+
+
+
+        /// <summary>
+        /// 执行生成
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
             /***连接数据库***/
@@ -25,7 +50,7 @@ namespace SugarCodeGeneration
             /***生成实体***/
 
             //配置参数
-            string classProjectName = "Sugar.Enties";//实体类项目名称
+            string classProjectName = SolutionName+".Enties";//实体类项目名称
             string classPath = "DbModels";//生成的目录
             string classNamespace = "Sugar.Enties";//实体命名空间
             var classDirectory = Methods.GetSlnPath + "\\" + classProjectName + "\\" + classPath.TrimStart('\\');
@@ -40,7 +65,7 @@ namespace SugarCodeGeneration
             /***生成DbContext***/
 
             //配置参数
-            var contextProjectName = "Sugar.BusinessCore";//DbContext所在项目
+            var contextProjectName = SolutionName+".BusinessCore";//DbContext所在项目
             var contextPath = "DbCore";//dbcontext存储目录
             var savePath = Methods.GetSlnPath + "\\" + contextProjectName + "\\" + contextPath + "\\DbContext.cs";//具体文件名
             var tables = db.DbMaintenance.GetTableInfoList().Select(it => it.Name).ToList();
@@ -55,7 +80,7 @@ namespace SugarCodeGeneration
             /***生成BLL***/
 
             //配置参数
-            var bllProjectName2 = "Sugar.BusinessCore";//具体项目
+            var bllProjectName2 = SolutionName+".BusinessCore";//具体项目
             var bllPath2 = "BaseCore";//文件目录
             var savePath2 = Methods.GetSlnPath + "\\" + bllProjectName2 + "\\" + bllPath2;//保存目录
             var tables2 = db.DbMaintenance.GetTableInfoList().Select(it => it.Name).ToList();
