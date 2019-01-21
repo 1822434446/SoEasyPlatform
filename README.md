@@ -11,8 +11,6 @@
 ## 使用步骤
 1.从上面的地址下载 SoEasyPlatform到本地
 
-下载地址： https://github.com/sunkaixuan/SoEasyPlatform
-
 
 2.解压项目
 
