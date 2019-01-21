@@ -30,9 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
     <ItemGroup>
-  <Reference Include="SqlSugar">
-    <HintPath>..\SugarCodeGeneration\bin\Debug\SqlSugar.dll</HintPath>
-   </Reference>
+    <Reference Include="SqlSugar, Version=4.9.8.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\sqlSugar.4.9.8.1\lib\SqlSugar.dll</HintPath>
+    </Reference>
      </ItemGroup>
   <ItemGroup>
     <Reference Include="System"/>

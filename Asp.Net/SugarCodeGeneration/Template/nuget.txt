@@ -4,5 +4,5 @@
   <package id="Newtonsoft.Json" version="9.0.1" targetFramework="net40" />
   <package id="Oracle.ManagedDataAccess" version="18.3.0" targetFramework="net40" />
   <package id="RazorEngine" version="3.10.0" targetFramework="net40" />
-  <package id="sqlSugar" version="4.9.7.5" targetFramework="net40" />
+  <package id="sqlSugar" version="4.9.8.1" targetFramework="net40" />
 </packages>

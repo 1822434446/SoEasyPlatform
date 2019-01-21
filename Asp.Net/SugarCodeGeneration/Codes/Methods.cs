@@ -138,7 +138,7 @@ namespace SugarCodeGeneration.Codes
                 }
                 FileHelper.CreateFile(projectPath, project, System.Text.Encoding.UTF8);
                 FileHelper.CreateFile(projectDic + "\\class1.cs", "", System.Text.Encoding.UTF8);
-                //没成功File.Copy(GetCurrentProjectPath + "/Template/nuget.txt", projectDic + "packages.config");
+                File.Copy(GetCurrentProjectPath + "/Template/nuget.txt", projectDic + "packages.config");
                 ProjectIds.Add(name, projectId);
                 AppendProjectToSln(projectId, name);
             }
