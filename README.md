@@ -47,12 +47,7 @@ const string SolutionName = "SoEasyPlatform";//解决方案名称
 
  3.代码如下
 
-//实例化一下
  StudentManager m = new StudentManager();
-
-//用m点需要的方法 
  m.Insert(new Sugar.Enties.Student() { Name="aa" });
-
  m.GetList();
- 
  //m.xxx
