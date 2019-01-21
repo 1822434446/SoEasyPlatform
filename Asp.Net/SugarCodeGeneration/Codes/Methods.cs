@@ -89,6 +89,15 @@ namespace SugarCodeGeneration.Codes
             xe.Save(xmlPath);
         }
 
+        public static void RenameSln(string solutionName)
+        {
+            var slns = Directory.GetFiles(GetSlnPath).Where(it => it.Contains(".sln"));
+            if (slns.Any())
+            {
+                File.Move(slns.First(), GetSlnPath+"\\"+solutionName+".sln");
+            }
+        }
+
         public static void CreateBLL(string templatePath, string savePath, List<string> tables, string classNamespace)
         {
 

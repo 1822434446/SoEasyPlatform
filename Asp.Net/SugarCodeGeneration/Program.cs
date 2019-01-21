@@ -94,6 +94,7 @@ namespace SugarCodeGeneration
 
             /***修改解决方案***/
             UpdateCsproj();
+            Methods.RenameSln(SolutionName);
             Print("项目解决方案修改成功");
 
 
