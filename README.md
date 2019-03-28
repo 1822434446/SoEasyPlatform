@@ -9,12 +9,12 @@
 
  
 ## 使用步骤
-1.从上面的地址下载 SoEasyPlatform到本地
+1.从上面的地址下载 SoEasyPlatform到本地  
 
 
 2.解压项目
 
-点击SoEasyPlatform.sln打开项目
+点击SoEasyPlatform.sln打开项目，重新生成项目会自动下载NUGET 文件 
 
 
 3.配置三个参数
