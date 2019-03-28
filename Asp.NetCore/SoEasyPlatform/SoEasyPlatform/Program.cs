@@ -47,7 +47,7 @@ namespace SugarCodeGeneration
             var db = GetDB();
 
 
-            /***生成实体***/
+            /***生成实体***/ //CodeFirst可以注释生成实体
 
             //配置参数
             string classProjectName = SolutionName+".Enties";//实体类项目名称
