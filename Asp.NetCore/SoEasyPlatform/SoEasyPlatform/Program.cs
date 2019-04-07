@@ -30,7 +30,7 @@ namespace SugarCodeGeneration
         /// <summary>
         ///解决方案名称
         /// </summary>
-        const string SolutionName = "SoEasyPlatform";
+        const string SolutionName = "SoEasyPlatform";//如果修改解决方案名称，F5执行完成后会自动关闭项目，找到目录重新打开项目解决方案便可
 
         /***3个必填参数***/
 
