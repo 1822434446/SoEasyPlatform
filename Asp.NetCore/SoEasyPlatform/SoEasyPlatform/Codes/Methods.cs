@@ -20,7 +20,7 @@ namespace SugarCodeGeneration.Codes
 
             get
             {
-                return Environment.CurrentDirectory.Replace(@"\bin\Debug", "");
+               return Environment.CurrentDirectory.Replace(@"\bin\Debug", "").Replace("\\netcoreapp2.0","");
             }
         }
         public static string GetSlnPath
