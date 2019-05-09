@@ -20,14 +20,16 @@
 3.配置三个参数
 
 const SqlSugar.DbType dbType = DbType.SqlServer;//数据库类型
+
 const string connectionString = "server=.;uid=sa;pwd=@jhl85661501;database=SqlSugar4XTest";//连接字符串
+
 const string SolutionName = "SoEasyPlatform";//解决方案名称
 　　
 
 4.F5运行
 
 
-5.完成
+5.完成(执行完成没发现有类库加进来，关掉解决方案重新打开便可以了)
 
 我们发现两个类库已经添加到解决方案下面了,并且相关的dll的类库引用也帮我们做好了，非常方便，数据库有改动后F5刷新就好了。
 
